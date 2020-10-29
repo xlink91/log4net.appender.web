@@ -1,0 +1,5 @@
+C:\Users\F9TKTP8\source\repos\log4net.Appender\log4net.Appender.Web.Models\bin\Debug\log4net.Appender.Web.Models.dll
+C:\Users\F9TKTP8\source\repos\log4net.Appender\log4net.Appender.Web.Models\bin\Debug\log4net.Appender.Web.Models.pdb
+C:\Users\F9TKTP8\source\repos\log4net.Appender\log4net.Appender.Web.Models\obj\Debug\log4net.Appender.Web.Models.csproj.CoreCompileInputs.cache
+C:\Users\F9TKTP8\source\repos\log4net.Appender\log4net.Appender.Web.Models\obj\Debug\log4net.Appender.Web.Models.dll
+C:\Users\F9TKTP8\source\repos\log4net.Appender\log4net.Appender.Web.Models\obj\Debug\log4net.Appender.Web.Models.pdb

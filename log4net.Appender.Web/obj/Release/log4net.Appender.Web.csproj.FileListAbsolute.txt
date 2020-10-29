@@ -1,0 +1,15 @@
+C:\Users\F9TKTP8\source\repos\log4net.Appender\log4net.Appender.Web\bin\Release\log4net.Appender.Web.dll
+C:\Users\F9TKTP8\source\repos\log4net.Appender\log4net.Appender.Web\bin\Release\log4net.Appender.Web.pdb
+C:\Users\F9TKTP8\source\repos\log4net.Appender\log4net.Appender.Web\bin\Release\log4net.Appender.Web.Helpers.dll
+C:\Users\F9TKTP8\source\repos\log4net.Appender\log4net.Appender.Web\bin\Release\log4net.Appender.Web.Models.dll
+C:\Users\F9TKTP8\source\repos\log4net.Appender\log4net.Appender.Web\bin\Release\log4net.dll
+C:\Users\F9TKTP8\source\repos\log4net.Appender\log4net.Appender.Web\bin\Release\Newtonsoft.Json.dll
+C:\Users\F9TKTP8\source\repos\log4net.Appender\log4net.Appender.Web\bin\Release\log4net.Appender.Web.Helpers.pdb
+C:\Users\F9TKTP8\source\repos\log4net.Appender\log4net.Appender.Web\bin\Release\log4net.Appender.Web.Models.pdb
+C:\Users\F9TKTP8\source\repos\log4net.Appender\log4net.Appender.Web\bin\Release\log4net.xml
+C:\Users\F9TKTP8\source\repos\log4net.Appender\log4net.Appender.Web\bin\Release\Newtonsoft.Json.xml
+C:\Users\F9TKTP8\source\repos\log4net.Appender\log4net.Appender.Web\obj\Release\log4net.Appender.Web.csprojAssemblyReference.cache
+C:\Users\F9TKTP8\source\repos\log4net.Appender\log4net.Appender.Web\obj\Release\log4net.Appender.Web.csproj.CoreCompileInputs.cache
+C:\Users\F9TKTP8\source\repos\log4net.Appender\log4net.Appender.Web\obj\Release\log4net.Appender.Web.csproj.CopyComplete
+C:\Users\F9TKTP8\source\repos\log4net.Appender\log4net.Appender.Web\obj\Release\log4net.Appender.Web.dll
+C:\Users\F9TKTP8\source\repos\log4net.Appender\log4net.Appender.Web\obj\Release\log4net.Appender.Web.pdb

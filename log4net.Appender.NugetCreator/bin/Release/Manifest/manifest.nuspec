@@ -1,0 +1,60 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+    <metadata>
+        <!-- The identifier that must be unique within the hosting gallery -->
+        <id>log4net.appender.webservice</id>
+
+        <!-- The package version number that is used when resolving dependencies -->
+        <version>1.0.0</version>
+
+        <!-- Authors contain text that appears directly on the gallery -->
+        <authors>DHT</authors>
+
+        <!-- 
+            Owners are typically nuget.org identities that allow gallery
+            users to easily find other packages by the same owners.  
+        -->
+        <owners>__</owners>
+        
+         <!-- License information is displayed on the gallery -->
+        <license type="expression">Apache-2.0</license>
+        
+
+        <!-- The icon is used in Visual Studio's package manager UI -->
+        <!--<iconUrl></iconUrl>-->
+
+        <!-- 
+            If true, this value prompts the user to accept the license when
+            installing the package. 
+        -->
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+        <!-- Any details about this particular release -->
+        <releaseNotes></releaseNotes>
+
+        <!-- 
+            The description can be used in package manager UI. Note that the
+            nuget.org gallery uses information you add in the portal. 
+        -->
+        <description>Appender Callback To Web Endpoint</description>
+
+        <!-- Copyright information -->
+        <copyright></copyright>
+
+        <!-- Tags appear in the gallery and can be used for tag searches -->
+        <tags>log log4net appender web</tags>
+
+        <!-- Dependencies are automatically installed when the package is installed -->
+        <dependencies>
+		  <dependency id="log4net" version="2.0.12"/>
+        </dependencies>
+    </metadata>
+
+    <!-- A readme.txt to display when the package is installed -->
+    <files>
+	  <file src="..\log4net.Appender.Web.dll" target="lib\net461" />
+	  <file src="..\log4net.Appender.Web.Helpers.dll" target="lib\net461" />
+      <file src="..\log4net.Appender.Web.Models.dll" target="lib\net461" />
+	  <file src="readme.txt" target="" />
+    </files>
+</package>
