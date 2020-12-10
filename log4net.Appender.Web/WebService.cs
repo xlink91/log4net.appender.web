@@ -43,10 +43,7 @@ namespace log4net.Appender.Web
                     new StringContent(SerializeObject(logRecordWeb), Encoding.UTF8, "application/json");
                 HttpResponseMessage response = httpClient.PostAsync(Uri, httpContent).Result;
                 }
-                catch (Exception)
-            {
-                System.IO.File.WriteAllText("WebAppender.txt", ex.ToString());
-            }
+                catch (Exception) { }
             }).Start();
         }
     }
