@@ -7,6 +7,8 @@ using static Newtonsoft.Json.JsonConvert;
 using Newtonsoft.Json;
 using System;
 using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
 
 namespace log4net.Appender.Web
 {
@@ -21,27 +23,30 @@ namespace log4net.Appender.Web
 
         protected override void Append(LoggingEvent loggingEvent)
         {
-            try
+            new Thread(() =>
             {
-                var logRecordWeb = 
-                    loggingEvent
-                        .MapTo();
-                IList<HeaderWeb> headerWebList =
-                    Headers
-                    .GetHeaders();
-                var httpClient = new HttpClient();
-                foreach (var header in headerWebList)
+                try
                 {
-                    httpClient.DefaultRequestHeaders.Add(header.Key, header.Value);
-                }
+                    var logRecordWeb =
+                        loggingEvent
+                            .MapTo();
+                    IList<HeaderWeb> headerWebList =
+                        Headers
+                        .GetHeaders();
+                    var httpClient = new HttpClient();
+                    foreach (var header in headerWebList)
+                    {
+                        httpClient.DefaultRequestHeaders.Add(header.Key, header.Value);
+                    }
 
-                StringContent httpContent =
-                    new StringContent(SerializeObject(logRecordWeb), Encoding.UTF8, "application/json");
-                HttpResponseMessage response = httpClient.PostAsync(Uri, httpContent).Result;
-            }catch(Exception ex) 
-            {
-                System.IO.File.WriteAllText("WebAppender.txt", ex.ToString());
-            }
+                    StringContent httpContent =
+                        new StringContent(SerializeObject(logRecordWeb), Encoding.UTF8, "application/json");
+                    HttpResponseMessage response = httpClient.PostAsync(Uri, httpContent).Result;
+                }
+                catch (Exception)
+                {
+                }
+            }).Start();
         }
     }
 }

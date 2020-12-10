@@ -36,7 +36,7 @@
             The description can be used in package manager UI. Note that the
             nuget.org gallery uses information you add in the portal. 
         -->
-        <description>Persistence framework and mocking</description>
+        <description>Appender Callback To Web Endpoint</description>
 
         <!-- Copyright information -->
         <copyright></copyright>

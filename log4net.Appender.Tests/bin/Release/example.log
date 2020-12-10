@@ -1,0 +1,9 @@
+INFO 1 log4net.Appender.Tests.Handler - System.Exception: Info Message!!! Testing appdender.
+DEBUG 1 log4net.Appender.Tests.Handler - System.Exception: Debug Message!!! Testing appdender.
+ERROR 1 log4net.Appender.Tests.Handler - System.Exception: Error Message!!! Testing appdender.
+INFO 1 log4net.Appender.Tests.Handler - System.Exception: Info Message!!! Testing appdender.
+DEBUG 1 log4net.Appender.Tests.Handler - System.Exception: Debug Message!!! Testing appdender.
+ERROR 1 log4net.Appender.Tests.Handler - System.Exception: Error Message!!! Testing appdender.
+INFO 1 log4net.Appender.Tests.Handler - System.Exception: Info Message!!! Testing appdender.
+DEBUG 1 log4net.Appender.Tests.Handler - System.Exception: Debug Message!!! Testing appdender.
+ERROR 1 log4net.Appender.Tests.Handler - System.Exception: Error Message!!! Testing appdender.
