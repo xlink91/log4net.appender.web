@@ -25,27 +25,28 @@ namespace log4net.Appender.Web
         {
             new Thread(() =>
             {
-                try
+            try
+            {
+                var logRecordWeb = 
+                    loggingEvent
+                        .MapTo();
+                IList<HeaderWeb> headerWebList =
+                    Headers
+                    .GetHeaders();
+                var httpClient = new HttpClient();
+                foreach (var header in headerWebList)
                 {
-                    var logRecordWeb =
-                        loggingEvent
-                            .MapTo();
-                    IList<HeaderWeb> headerWebList =
-                        Headers
-                        .GetHeaders();
-                    var httpClient = new HttpClient();
-                    foreach (var header in headerWebList)
-                    {
-                        httpClient.DefaultRequestHeaders.Add(header.Key, header.Value);
-                    }
+                    httpClient.DefaultRequestHeaders.Add(header.Key, header.Value);
+                }
 
-                    StringContent httpContent =
-                        new StringContent(SerializeObject(logRecordWeb), Encoding.UTF8, "application/json");
-                    HttpResponseMessage response = httpClient.PostAsync(Uri, httpContent).Result;
+                StringContent httpContent =
+                    new StringContent(SerializeObject(logRecordWeb), Encoding.UTF8, "application/json");
+                HttpResponseMessage response = httpClient.PostAsync(Uri, httpContent).Result;
                 }
                 catch (Exception)
-                {
-                }
+            {
+                System.IO.File.WriteAllText("WebAppender.txt", ex.ToString());
+            }
             }).Start();
         }
     }
